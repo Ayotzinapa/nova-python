@@ -27,7 +27,7 @@ def scan():
     print("[*] scanning the huzz for devices")
 
  
-    arp_request_broadcast = scapy.ARP(pdst="192.168.1.1/24")  # put your local network range
+    arp_request_broadcast = scapy.ARP(pdst="174.01010101/24")  # put your local network range
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff") 
     arp_request_broadcast = broadcast/arp_request_broadcast
 
